@@ -13,6 +13,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /*  
@@ -152,11 +153,13 @@ section{
     background-position: center;
     background-size: cover;
     float: left;
+    border-radius: 5px;
 }
 
 .sessao-descricao{
     position: absolute;
     left: 37rem;
+    max-width: 80rem;
     padding-right: 30px;
 }
 
@@ -192,8 +195,10 @@ section{
 #sessao-sobre .sessao-minibanner{
     float: right;
     margin-left: 5rem;
-    margin-right: 7rem;
+    margin-right: 5rem;
     background-image: url(/assets/img/banner4.jpg);
+    width: 60rem;
+    border-radius: 5px;
 }
 
 #sessao-sobre .sessao-descricao{
@@ -217,75 +222,132 @@ section{
     margin-bottom: 5rem;
 }
 
-.doces1-imgs{
-    width: 18.8%;
-    margin-left: .5%;
-    margin-right: .5%;
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 19.3%);
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.gallery-img{
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gallery-img div {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img div:hover {
+    transform: translate(-3%, -3%) scale(1.25) rotate(5deg);
 }
 
 #img1{
+    height: 200px;
     background-image: url(/assets/img/galeria1.jpg);
+    background-position: center;
+    background-size: cover;
     margin-left: 0;
 }
 
 #img2{
     background-image: url(/assets/img/galeria2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img3{
     background-image: url(/assets/img/galeria3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img4{
     background-image: url(/assets/img/galeria4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img5{
     background-image: url(/assets/img/galeria5.jpg);
+    background-position: center;
+    background-size: cover;
     margin-right: 0;
+    height: 200px;
 }
 
-.doces2-imgs{
-    width: 32.3%;
-    margin-left: .5%;
-    margin-right: .5%;
+.grid2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    gap: 1rem;
+    overflow: hidden;
 }
 
 #img6{
     background-image: url(/assets/img/galeria6.jpg);
     margin-left: 0;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img7{
     background-image: url(/assets/img/galeria7.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img8{
     background-image: url(/assets/img/galeria8.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
     margin-right:0 ;
 }
 
-.doces3-imgs{
-    width: 23.9%;
-    margin-left: .5%;
-    margin-right: .5%;
+.grid3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    gap: 1rem;
+    overflow: hidden;
 }
 
 #img9{
     background-image: url(/assets/img/galeria9.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
     margin-left: 0;
 }
 
 #img10{
     background-image: url(/assets/img/galeria10.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img11{
     background-image: url(/assets/img/galeria11.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 #img12{
     background-image: url(/assets/img/galeria12.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
     margin-right: 0;
 }
 
