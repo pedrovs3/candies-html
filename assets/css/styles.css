@@ -130,7 +130,7 @@ section{
 
 #sessao-bemvindo .banner{
     height: 50rem;
-    background-image: url(assets/img/banner2.jpg);
+    background-image: url(./img/banner2.jpg);
     background-position: 100%;
     background-attachment: fixed;
     background-size: cover;
